@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Preguntas</title>
+</head>
+<body>
+    <h1>Simulador de Preguntas</h1>
+
+    <label for="name">¿Cuál es tu nombre?</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label for="age">¿Cuántos años tienes?</label><br>
+    <input type="number" id="age"><br><br>
+
+    <label for="language">¿Qué lenguaje de programación estás estudiando?</label><br>
+    <input type="text" id="language"><br><br>
+
+    <button id="submitButton">Enviar</button>
+
+    <p id="resultMessage"></p>
+
+    <!-- Segunda parte: Pregunta adicional -->
+    <div id="followUp" style="display: none;">
+        <p id="followUpQuestion"></p>
+        <label><input type="radio" name="likeLanguage" value="1"> 1 (SÍ)</label><br>
+        <label><input type="radio" name="likeLanguage" value="2"> 2 (NO)</label><br><br>
+        <button id="followUpButton">Enviar respuesta</button>
+    </div>
+
+    <p id="finalMessage"></p>
+
+    <script src="Dia_2.js"></script>
+</body>
+</html>
